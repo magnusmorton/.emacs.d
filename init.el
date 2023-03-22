@@ -271,6 +271,9 @@
 (use-package ace-window
   :bind ("M-o" . ace-window))
 
+(use-package rainbow-delimiters
+  :config (rainbow-delimiters-mode))
+
 ;; ibuffer
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
@@ -320,7 +323,7 @@
    '("b54bf2fa7c33a63a009f249958312c73ec5b368b1094e18e5953adb95ad2ec3a" default))
  '(ispell-dictionary nil t)
  '(package-selected-packages
-   '(eglot rust-mode evil markdown-mode embark-consult embark marginalia orderless ace-window diminish which-key magit dracula-theme vertico consult cmake-mode use-package))
+   '(rainbow-delimiters eglot rust-mode evil markdown-mode embark-consult embark marginalia orderless ace-window diminish which-key magit dracula-theme vertico consult cmake-mode use-package))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces

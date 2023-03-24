@@ -264,6 +264,8 @@
 (use-package magit
   :bind ("C-x g" . magit-status))
 
+(use-package diminish)
+
 (use-package which-key
   :diminish
   :config (which-key-mode))

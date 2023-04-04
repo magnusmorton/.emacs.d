@@ -276,6 +276,16 @@
 (use-package rainbow-delimiters
   :config (rainbow-delimiters-mode))
 
+(use-package eglot
+  :config
+ (add-to-list 'eglot-server-programs
+            '((c-mode c++-mode)
+              . ("clangd"))))
+
+(use-package tramp
+  :config
+  (add-to-list 'tramp-remote-path 'tramp-own-remote-path))
+
 ;; ibuffer
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
